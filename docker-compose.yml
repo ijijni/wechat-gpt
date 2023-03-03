@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  wechatgpt:
+    image: ijijni/wechatgpt:latest
+    environment:
+      api_key: your_api_key
+      wechat: "true"
+      wechat_keyword: 小薇
+    command: ./server
+    restart: always

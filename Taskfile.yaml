@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - task release
+
+  release:
+    cmds:
+      - docker build --platform linux/amd64 -t ijijni/wechatgpt-amd64:latest .
+      - docker push ijijni/wechatgpt-amd64:latest
