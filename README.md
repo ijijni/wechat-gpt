@@ -182,9 +182,18 @@ go version go1.17.3 linux/amd64
 
 ```
 go: github.com/eatmoreapple/openwechat@v1.2.1: Get https://proxy.golang.org/github.com/eatmoreapple/openwechat/@v/v1.2.1.mod: dial tcp 142.251.43.17:443:
+
 ```
 
 自身网络环境问题，请排查网络设置
+
+### 5. 请求超时
+
+```
+ bot error: Post "https://api.openai.com/v1/chat/completions": dial tcp 199.16.158.9:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+ ```
+ 一般是因为```api.openai.com```地址被墙，此时就需要使用梯子，才能访问了。
+
 
 ## 协议
 
